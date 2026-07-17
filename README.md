@@ -161,3 +161,26 @@ Processed Image
 # Step 15
 
 Users can download the processed image.
+
+# Folder Structure
+Car_Colour_Detection_Task
+- traffic_signal_app.py        # Streamlit application
+- car_colour_train.py          # YOLO training script
+- best.pt                      # Trained YOLO model
+- Yolov8n.pt                   # Pre-trained YOLOv8 model
+- test.jpg                     # Sample input image
+- README.md                    # Project documentation
+- runs                        # Training output (optional)
+    - detect/
+        - car_colour_detection/
+             - weights/
+                   - best.pt
+                   - last.pt
+
+- output.jpg                   # Generated output image
+
+Note: If you keep best.pt in the runs/.../weights/ folder instead of the project root, update the path in traffic_signal_app.py accordingly.
+
+# Conclusion
+
+The Car Colour Detection System combines YOLOv8, OpenCV, and Streamlit to detect cars and people in traffic images. After detecting cars, HSV colour analysis is used to classify each car as Blue or Other. The application provides a simple interface for uploading images, viewing detection results, and downloading the processed output, making it suitable for traffic monitoring and educational computer vision projects.
