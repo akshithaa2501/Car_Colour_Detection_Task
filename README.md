@@ -164,22 +164,20 @@ Users can download the processed image.
 
 # Folder Structure
 Car_Colour_Detection_Task/
-│
-├── traffic_signal_app.py        # Streamlit application
-├── car_colour_train.py          # YOLO training script
-├── best.pt                      # Trained YOLO model
-├── yolov8n.pt                   # Pre-trained YOLOv8 model
-├── test.jpg                     # Sample input image
-├── README.md                    # Project documentation
-│
-├── runs/                        # Training output (optional)
-│   └── detect/
-│       └── car_colour_detection/
-│           └── weights/
-│               ├── best.pt
-│               └── last.pt
-│
-└── output.jpg                   # Generated output image      
+- traffic_signal_app.py        # Streamlit application
+- car_colour_train.py          # YOLO training script
+- best.pt                      # Trained YOLO model
+- yolov8n.pt                   # Pre-trained YOLOv8 model
+- test.jpg                     # Sample input image
+- README.md                    # Project documentation
+- runs/                        # Training output (optional)
+    - detect/
+        - car_colour_detection/
+            - weights/
+                -  best.pt
+                - last.pt
+
+- output.jpg                   # Generated output image      
 
 Note: If you keep best.pt in the runs/.../weights/ folder instead of the project root, update the path in traffic_signal_app.py accordingly.
 
