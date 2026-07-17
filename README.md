@@ -173,7 +173,7 @@ Car_Colour_Detection_Task
 - runs                        
       - detect
           - car_colour_detection
-               - weights
+              - weights
                     - best.pt
                     - last.pt
 
